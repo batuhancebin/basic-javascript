@@ -1,0 +1,16 @@
+Veri Tipleri
+-Sayısal veri: Değişkenlere atanan tamsayı veya ondalıklı değerler değişkenin veri tipini Number yapar.
+-Sözel veri: Değişkenlere atanan karakter veya metinler değişkenin veri tipini String yapar.
+-Mantıksal veri: Bir değişkene true veya false değerini atarsanız bu değişken Boolean tipine dönüşür.
+-Dizi: Diziler birden fazla değer taşıyan değişkenlerdir.
+-Undefined:Herhangi bir JavaScript değişkeni tanımlanmış ama değer atanmamışsa değişkenin veri tipi Undefined olarak görülür.
+-Null:Boş ve Değer yok.
+
+Bir değişkenin veri tipini öğrenmek
+JavaScript değişkenlerinin veri tipini öğrenmenin en kolay yolu typeof() komutunu kullanmaktadır. Bu komut parantez içine yazılan değişkenin veri tipini döndürür.
+
+Veri Tipi Değiştirme
+-Number(veri):Parantez i.indeki veriyi sayısal değere dönüştürür.
+-String(veri):Parantez içindeki veriyi sözel değere dönüştürür.
+-Boolean(veri):Verinin Boolean tipine dönüştürülmesini sağlar. Sıfırdan büyük tüm değerler ve metinler true; boş, sıfır ve daha küçük değerler ile null ve undefined değerleri false veri tipine dönüştürülür.
+-Date(veri):Verinin Date (tarih) tipine dönüştürülmesini sağlar.

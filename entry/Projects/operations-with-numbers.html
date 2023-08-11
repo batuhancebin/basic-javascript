@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p></p>
+
+    <button type="button" onclick="add()">Add</button>
+    <button type="button" onclick="sub()">Subtract</button>
+    <button type="button" onclick="mul()">Multiply</button>
+    <button type="button" onclick="div()">Divide</button>
+    <button type="button" onclick="mod()">Modulo</button>
+    <button type="button" onclick="pow()">Power</button>
+
+    <script>
+      var a = Number(prompt("Enter a number"));
+      var b = Number(prompt("Enter another number"));
+      var result;
+      // addition
+      function add() {
+        result = a + b;
+        document.querySelector("p").innerHTML = "The sum is " + result;
+      }
+      // subtraction
+      function sub() {
+        result = a - b;
+        document.querySelector("p").innerHTML = "The difference is " + result;
+      }
+      // multiplication
+      function mul() {
+        result = a * b;
+        document.querySelector("p").innerHTML = "The product is " + result;
+      }
+      // division
+      function div() {
+        result = a / b;
+        document.querySelector("p").innerHTML = "The quotient is " + result;
+      }
+      // modulo
+      function mod() {
+        result = a % b;
+        document.querySelector("p").innerHTML = "The remainder is " + result;
+      }
+      // power
+      function pow() {
+        result = a ** b;
+        document.querySelector("p").innerHTML = "The power is " + result;
+      }
+    </script>
+  </body>
+</html>
