@@ -1,0 +1,24 @@
+operators
+arithmetic operators
+ + - * / % ++ --
+assignment operators
+ = += -= *= /= %=
+comparison operators
+ == === != !== > < >= <=
+logical operators
+ && || !
+string operators
+ . +=
+ternary operator
+ ? :
+conditional operator
+ if else
+switch
+loops
+for while do while
+break continue
+functions
+function name(){}
+function name(){return;}
+function name(){return value;}
+function name(value1,value2){return value1+value2;}
