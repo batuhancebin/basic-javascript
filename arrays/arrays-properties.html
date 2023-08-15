@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // create array
+      var arr = new Array(10);
+      for (let i = 0; i < 10; i++) {
+        arr[i] = i;
+      }
+
+      //properties
+      document.write("Length: " + arr.length + "<br>");
+      document.write("Constructor: " + arr.constructor + "<br>");
+      document.write("Prototype: " + arr.prototype + "<br>");
+      document.write("Type: " + typeof arr + "<br>");
+      document.write("sort: " + arr.sort() + "<br>");
+      document.write("reverse: " + arr.reverse() + "<br>");
+      document.write("toString: " + arr.toString() + "<br>");
+      document.write("valueOf: " + arr.valueOf() + "<br>");
+      document.write("join: " + arr.join() + "<br>");
+      document.write("pop: " + arr.pop() + "<br>");
+      document.write("push: " + arr.push(10) + "<br>");
+      document.write("shift: " + arr.shift() + "<br>");
+      document.write("unshift: " + arr.unshift(0) + "<br>");
+      document.write("splice: " + arr.splice(0, 1) + "<br>");
+      document.write("concat: " + arr.concat(10) + "<br>");
+      document.write("slice: " + arr.slice(0, 1) + "<br>");
+    </script>
+  </body>
+</html>
