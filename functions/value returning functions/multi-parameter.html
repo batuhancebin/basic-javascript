@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //multi-parameter function that returns a value
+        function sayHello(firstName, lastName) {
+            var message = "Hello " + firstName + " " + lastName + "!";
+            return message;
+        }
+        var firstName = prompt("Enter your first name");
+        var lastName = prompt("Enter your last name");
+        document.write(sayHello(firstName, lastName));
+    </script>
+</body>
+</html>
