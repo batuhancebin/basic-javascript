@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <select name="" id="select">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+        <option value="">Option 5</option>
+      </select>
+    </form>
+
+    <script>
+      var select = document.getElementById("select");
+      var options = select.options;
+      var option = options[0];
+      var text = option.text;
+      var value = option.value;
+      var selected = option.selected;
+      var index = option.index;
+      document.write(
+        "Text: " +
+          text +
+          "<br>" +
+          "Value: " +
+          value +
+          "<br>" +
+          "Selected: " +
+          selected +
+          "<br>" +
+          "Index: " +
+          index
+      );
+
+      
+    </script>
+  </body>
+</html>

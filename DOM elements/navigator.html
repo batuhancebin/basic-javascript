@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //navigator properties
+      document.write("appCodeName: " + navigator.appCodeName + "<br>");
+      document.write("appName: " + navigator.appName + "<br>");
+      document.write("appVersion: " + navigator.appVersion + "<br>");
+      document.write("cookieEnabled: " + navigator.cookieEnabled + "<br>");
+      document.write("geolocation: " + navigator.geolocation + "<br>");
+      document.write("language: " + navigator.language + "<br>");
+      document.write("onLine: " + navigator.onLine + "<br>");
+      document.write("platform: " + navigator.platform + "<br>");
+      document.write("product: " + navigator.product + "<br>");
+      document.write("userAgent: " + navigator.userAgent + "<br>");
+
+      //navigator methods
+      navigator.geolocation.getCurrentPosition(function (position) {
+        document.write(
+          "Latitude: " +
+            position.coords.latitude +
+            "<br>Longitude: " +
+            position.coords.longitude
+        );
+      });
+
+      navigator.geolocation.watchPosition(function (position) {
+        document.write(
+          "Latitude: " +
+            position.coords.latitude +
+            "<br>Longitude: " +
+            position.coords.longitude
+        );
+      });
+
+      navigator.geolocation.clearWatch(watchID);
+
+      navigator.javaEnabled();
+
+      navigator.registerProtocolHandler(
+        "mailto",
+        "https://mail.google.com/mail/?extsrc=mailto&url=%s",
+        "Gmail"
+      );
+
+      navigator.sendBeacon("https://www.google.com", "data");
+
+      navigator.vibrate(1000);
+
+      navigator.getBattery().then(function (battery) {
+        document.write("Battery level: " + battery.level);
+      });
+
+      navigator.getGamepads();
+      
+    </script>
+  </body>
+</html>
