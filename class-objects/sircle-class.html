@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class sircle{
+            constructor(r){
+                this.r = r;
+            }
+            area(){
+                return Math.PI * this.r * this.r;
+            }
+            perimeter(){
+                return 2 * Math.PI * this.r;
+            }
+        }
+        sircle1 = new sircle(5);
+        sircle2 = new sircle(10);
+        sircle3 = new sircle(15);
+
+        sircle1.area();
+        sircle1.perimeter();
+        document.write("sircle1 area: " + sircle1.area() + "<br>");
+        document.write("sircle1 perimeter: " + sircle1.perimeter() + "<br>");
+
+        sircle2.area();
+        sircle2.perimeter();
+        document.write("sircle2 area: " + sircle2.area() + "<br>");
+        document.write("sircle2 perimeter: " + sircle2.perimeter() + "<br>");
+
+        sircle3.area();
+        sircle3.perimeter();
+        document.write("sircle3 area: " + sircle3.area() + "<br>");
+        document.write("sircle3 perimeter: " + sircle3.perimeter() + "<br>");
+    </script>
+</body>
+</html>

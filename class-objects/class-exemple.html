@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class member {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+        show() {
+          document.write(this.name + " " + this.age + "<br>");
+        }
+      }
+        let member1 = new member("Ali", 20);
+        let member2 = new member("Veli", 25);
+        let member3 = new member("Ayşe", 30);
+
+        member1.show();
+        member2.show();
+        member3.show();
+
+    </script>
+  </body>
+</html>

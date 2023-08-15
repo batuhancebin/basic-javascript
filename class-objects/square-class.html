@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class square {
+        constructor(side1, side2) {
+          this.side1 = side1;
+          this.side2 = side2;
+        }
+        area() {
+          return this.side1 * this.side2;
+        }
+        perimeter() {   
+          return 2 * (this.side1 + this.side2);
+        }
+      }
+      let square1 = new square(10, 10);
+      document.write("Area of square1 is: " + square1.area() + "<br>");
+      document.write("Perimeter of square1 is: " + square1.perimeter());
+
+      let square2 = new square(20, 15);
+      document.write("<br>Area of square2 is: " + square2.area() + "<br>");
+      document.write("Perimeter of square2 is: " + square2.perimeter());
+    </script>
+  </body>
+</html>
