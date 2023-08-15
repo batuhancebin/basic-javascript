@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //grade passing grade calculation
+      var firstExam = prompt("Enter your first exam grade");
+      var secondExam = prompt("Enter your second exam grade");
+      var passingGrade = parseInt(firstExam) * 0.4 + parseInt(secondExam) * 0.6;
+
+      if (passingGrade >= 50) {
+        document.write("You passed the class");
+      } else {
+        document.write("You failed the class");
+      }
+    </script>
+  </body>
+</html>

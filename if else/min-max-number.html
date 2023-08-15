@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //find big and small number in array
+      var numbers = [5, 7, 3, 9, 1, 4, 6, 8, 2];
+
+      var min = numbers[0];
+      var max = numbers[0];
+
+      for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] < min) {
+          min = numbers[i];
+        }
+        if (numbers[i] > max) {
+          max = numbers[i];
+        }
+      }
+
+        document.write("Min number is: " + min + "<br>");
+        document.write("Max number is: " + max);
+    </script>
+  </body>
+</html>
